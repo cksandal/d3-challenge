@@ -44,7 +44,7 @@ function generateChart(){
         var svgWidth = window.innerWidth;
         if (svgWidth > 972)  svgWidth = 972;
         if (svgWidth < 350)  svgWidth = 350;
-        var svgHeight = svgWidth/16*12;
+        var svgHeight = svgWidth/16*10;
         height = svgHeight - margin.top - margin.bottom;
         width = svgWidth - margin.left - margin.right;
         var svg = d3.select("#scatter").append("svg").attr("height", svgHeight).attr("width", svgWidth);
